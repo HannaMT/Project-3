@@ -1,0 +1,61 @@
+.App {
+  width:100vw;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background-color: antiquewhite;
+  flex-direction: column;
+  color:black;
+}
+.App h1{
+  margin: 0px;
+}
+#flipcard{
+  height: 400px;
+  width: 600px;
+}
+
+#card{
+  height:100%;
+  width: 100%;
+  border-radius: 20px;
+  position:relative;
+  transform-style: preserve-3d;
+  transition: transform 75ms;
+}
+#card.flipped {
+  transform: rotateY(180deg);
+}
+
+#frontcard,#backcard{
+  height:100%;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  position: absolute;
+  backface-visibility: hidden;
+}
+#frontcard{
+  display: flex;
+  align-items:center;
+  background-color: whitesmoke;
+}
+#frontcard img{
+  height: 80%;
+  width: 70%;
+}
+#backcard{
+  text-align: center;
+  background-color: lightcyan;
+  transform: rotateY(180deg);
+}
+
+button{
+  margin:40px;
+}
+
+#Button{
+  display:flexbox;
+}
